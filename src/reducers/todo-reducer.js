@@ -24,7 +24,7 @@ export const todoReducer = (state = initialState, action) => {
             return {
                 ...state,
                 task: state.task.filter(oneTask => oneTask.id !== action.payload.id)
-            }
+            };
         default: 
             return state;
     };
